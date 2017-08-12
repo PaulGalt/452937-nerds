@@ -6,11 +6,11 @@
 </head>
 <body>
   <header class="main-header">
+    <a class= "main-header-logo" href="index.html">
+      <img src="img/logo.svg" width="100" height="100" alt="Логотип вэб-студии
+    «Нёрдс»">
+    </a>
     <nav class="main-navigation">
-      <a class= "main-header-logo" href="index.html">
-        <img src="img/logo.svg" width="100" height="100" alt="Логотип вэб-студии
-      «Нёрдс»">
-      </a>
       <ul class="site-navigation">
         <li>
           <a href="info.html">Студия</a>
@@ -33,7 +33,7 @@
     <section class="filters">
       <h2 class="visually-hidden">Фильтр шаблонов</h2>
       <form action="https://echo.htmlacademy.ru" class="filter" method="post"
-      oninput="#">
+      oninput="">
         <fieldset>
           <legend>Стоимость:</legend>
           <input type="range" name="price" min="0" max="25000" value="15000">
@@ -98,96 +98,97 @@
         <button type="submit" class="btn filter-button">Показать</button>
       </form>
     </section>
-    <section class="sorting">
-      <h2 class="visually-hidden">Сортировка шаблонов</h2>
-      <p><b>сортировать:</b></p>
-      <ul class="sorting-items">
-        <li class="sorting-item-active">
-          <a href="#">по цене</a>
-        </li>
-        <li>
-          <a href="#">по типу</a>
-        </li>
-        <li>
-          <a href="#">по названию</a>
-        </li>
-      </ul>
-    </section>
-    <section class="catalog">
-      <h2 class="visually-hidden">Наши шаблоны</h2>
-      <ul class="catalog-list">
-        <li class="catalog-item">
-          <img src="img/sedona-img.jpg" alt="Шаблон «Седона»" width="100" height="100">
-          <div class="hover-info">
-            <a href="#"><span class="title-item">sedona</span></a>
-            <p>Информационный сайт для туристов</p>
-            <a href="#" class="btn">9 900РУБ.</a>
-          </div>
-        </li>
-        <li class="catalog-item">
-          <img src="img/pink-img.jpg" alt="Шаблон «Pink»" width="100" height="100">
-          <div class="hover-info">
-            <a href="#"><span class="title-item">pink app</span></a>
-            <p>Продуктовый лендинг приложение для iOS и Android</p>
-            <a href="#" class="btn">9 900РУБ.</a>
-          </div>
-        </li>
-        <li class="catalog-item">
-          <img src="img/barbershop-img.jpg" alt="Шаблон «Barbershop»" width="100" height="100">
-          <div class="hover-info">
-            <a href="#"><span class="title-item">barbershop</span></a>
-            <p>Сайт салоны красоты. Для мужщин, да.</p>
-            <a href="#" class="btn">9 900РУБ.</a>
-          </div>
-        </li>
-        <li class="catalog-item">
-          <img src="img/mishka-img.jpg" alt="Шаблон «Мишка»" width="100" height="100">
-          <div class="hover-info">
-            <a href="#"><span class="title-item">mishka</span></a>
-            <p>Интернет-магазин вязаных игрушек</p>
-            <a href="#" class="btn">9 900РУБ.</a>
-          </div>
-        </li>
-        <li class="catalog-item">
-          <img src="img/aplus-img.jpg" alt="Шаблон «A Plus»" width="100" height="100">
-          <div class="hover-info">
-            <a href="#"><span class="title-item">a plus</span></a>
-            <p>Лендинг курсов повышения квалификации</p>
-            <a href="#" class="btn">9 900РУБ.</a>
-          </div>
-        </li>
-        <li class="catalog-item">
-          <img src="img/sedona-img.jpg" alt="Шаблон «Седона»" width="100" height="100">
-          <div class="hover-info">
-            <a href="#"><span class="title-item">кваст</span></a>
-            <p>Промо-сайт производителя крафтового кваса</p>
-            <a href="#" class="btn">9 900РУБ.</a>
-          </div>
-        </li>
-      </ul>
-      <ul class="pagination-list">
-        <li class="pagination-item pagination-item-current">
-          <a href="#">1</a>
-        </li>
-        <li class="pagination-item">
-          <a href="#">2</a>
-        </li>
-        <li class="pagination-item">
-          <a href="#">3</a>
-        </li>
-        <li class="pagination-item">
-          <a href="#">следующая</a>
-        </li>
-      </ul>
-    </section>
-
+    <div class="catalog">
+      <section class="sorting">
+        <h2 class="visually-hidden">Сортировка шаблонов</h2>
+        <p><b>сортировать:</b></p>
+        <ul class="sorting-items">
+          <li class="sorting-item-active">
+            <a href="#">по цене</a>
+          </li>
+          <li>
+            <a href="#">по типу</a>
+          </li>
+          <li>
+            <a href="#">по названию</a>
+          </li>
+        </ul>
+      </section>
+      <section class="catalog-items">
+        <h2 class="visually-hidden">Наши шаблоны</h2>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <img src="img/sedona-img.jpg" alt="Шаблон «Седона»" width="100" height="100">
+            <div class="hover-info">
+              <a href="#"><span class="title-item">sedona</span></a>
+              <p>Информационный сайт для туристов</p>
+              <a href="#" class="btn">9 900РУБ.</a>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <img src="img/pink-img.jpg" alt="Шаблон «Pink»" width="100" height="100">
+            <div class="hover-info">
+              <a href="#"><span class="title-item">pink app</span></a>
+              <p>Продуктовый лендинг приложение для iOS и Android</p>
+              <a href="#" class="btn">9 900РУБ.</a>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <img src="img/barbershop-img.jpg" alt="Шаблон «Barbershop»" width="100" height="100">
+            <div class="hover-info">
+              <a href="#"><span class="title-item">barbershop</span></a>
+              <p>Сайт салоны красоты. Для мужщин, да.</p>
+              <a href="#" class="btn">9 900РУБ.</a>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <img src="img/mishka-img.jpg" alt="Шаблон «Мишка»" width="100" height="100">
+            <div class="hover-info">
+              <a href="#"><span class="title-item">mishka</span></a>
+              <p>Интернет-магазин вязаных игрушек</p>
+              <a href="#" class="btn">9 900РУБ.</a>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <img src="img/aplus-img.jpg" alt="Шаблон «A Plus»" width="100" height="100">
+            <div class="hover-info">
+              <a href="#"><span class="title-item">a plus</span></a>
+              <p>Лендинг курсов повышения квалификации</p>
+              <a href="#" class="btn">9 900РУБ.</a>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <img src="img/sedona-img.jpg" alt="Шаблон «Седона»" width="100" height="100">
+            <div class="hover-info">
+              <a href="#"><span class="title-item">кваст</span></a>
+              <p>Промо-сайт производителя крафтового кваса</p>
+              <a href="#" class="btn">9 900РУБ.</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-current">
+            <a href="#">1</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#">следующая</a>
+          </li>
+        </ul>
+      </section>
+    </div>
   </main>
   <footer class="main-footer">
     <section class="address">
       <h2 class="visually-hidden">Как нас найти</h2>
       <img src="img/map.jpg" alt="Карта" width="900" height="100">
       <div class="our-address">
-        <h5>NЁRDS DESIGN STUDIO</h5>
+        <p><b>NЁRDS DESIGN STUDIO</b></p>
         <p>191186, Санкт-Петербург,<br>
         ул. Б. Конюшенная, д. 19/8</p>
         <p>тел. +7 (812) 275-75-75</p>
@@ -208,7 +209,7 @@
           <a href="https://www.instagram.com">Instagram</a>
         </li>
       </ul>
-      <span class="selected-text">Давайте дружить, это выгодно!</span>
+      <p><b>Давайте дружить, это выгодно!</b></p>
       <p>Скидка 10% для друзей из социальных сетей. </p>
     </section>
   </footer>
