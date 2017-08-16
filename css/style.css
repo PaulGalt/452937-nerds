@@ -6,23 +6,36 @@ body {
   font-family: 'Roboto', Arial, sans-serif;
 }
 
-h1 {
+.main-title {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
   color: #000000;
 }
 
-h2 {
+.contact-title {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
   color: #000000;
 }
 
-h3 {
+.advantage-sait-title,
+.advantage-app-title,
+.advantage-presentation-title {
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
   color: #000000;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
