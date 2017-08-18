@@ -40,7 +40,9 @@
           <input type="range" name="price" min="0" max="25000" value="15000">
            <p>
             от
-            <output name="min-price">0</output>
+            <output name="min-price">
+              0
+            </output>
            </p>
            <p>
              до
@@ -52,16 +54,16 @@
         <fieldset>
           <legend>Сетка:</legend>
           <ul>
-            <li class="visually-hidden filter-input">
+            <li class="filter-input">
               <input type="radio" name="product-group" value="adaptiv" checked>
               Адаптивная
             </li>
-            <li class="visually-hidden filter-input">
+            <li class="filter-input">
               <input type="radio" name="product-group" value="fixed">
               Фиксированная
             </li>
-            <li class="visually-hidden filter-input">
-              <input type="radio" name="product-group" value="flexible">
+            <li class="filter-input">
+              <input type="radio" name="product-group" value="flexible" class="visually-hidden">
               Резиновая
             </li>
           </ul>
@@ -70,27 +72,27 @@
           <legend>Особенности:</legend>
           <ul>
             <li class="filter-option">
-              <input type="checkbox" class="visually-hidden filter-input"
+              <input type="checkbox" class="filter-input"
               name="slider" checked>
               Слайдер
             </li>
             <li class="filter-option">
-              <input type="checkbox" class="visually-hidden filter-input"
+              <input type="checkbox" class="filter-input"
               name="advantages">
               Блок преимуществ
             </li>
             <li class="filter-option">
-              <input type="checkbox" class="visually-hidden filter-input"
+              <input type="checkbox" class="filter-input"
               name="news" checked>
               Новости
             </li>
             <li class="filter-option">
-              <input type="checkbox" class="visually-hidden filter-input"
+              <input type="checkbox" class="filter-input"
               name="gallery">
               Галерея
             </li>
             <li class="filter-option">
-              <input type="checkbox" class="visually-hidden filter-input"
+              <input type="checkbox" class="filter-input"
               name="basket">
               Корзина
             </li>
@@ -112,6 +114,12 @@
           </li>
           <li>
             <a href="#">по названию</a>
+          </li>
+          <li>
+            <a href="#" class="visually-hidden">по убыванию</a>
+          </li>
+          <li>
+            <a href="#" class="visually-hidden">по возрастанию</a>
           </li>
         </ul>
       </section>
@@ -159,7 +167,7 @@
             </div>
           </li>
           <li class="catalog-item">
-            <img src="img/sedona-img.jpg" alt="Шаблон «Седона»" width="360" height="576">
+            <img src="img/kvast-img.jpg" alt="Шаблон «Кваст»" width="360" height="576">
             <div class="hover-info">
               <a href="#"><span class="title-item">кваст</span></a>
               <p>Промо-сайт производителя крафтового кваса</p>
@@ -225,7 +233,7 @@
       <textarea id="message" name="message">В свободной форме</textarea>
       <button class="btn" type="submit">Отправить</button>
     </form>
-    <span class="modal-close">X</span>
+    <button class="modal-close" type="button">Закрыть</button>
   </section>
 </body>
 </html>
