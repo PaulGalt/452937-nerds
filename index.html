@@ -3,85 +3,91 @@
   <head>
     <meta charset="utf-8">
     <title>Вэб-студия «Нёрдс»</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
-      <a class="main-header-logo">
-        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип
-      вэб-студии «Нёрдс»">
-      </a>
-      <nav class="main-navigation">
-        <ul class="site-navigation">
-          <li>
-            <a href="info.html">Студия</a>
+    <div class="top-wrapper">
+      <header class="main-header">
+        <a class="main-header-logo">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип
+        вэб-студии «Нёрдс»">
+        </a>
+        <nav class="main-navigation">
+          <ul class="site-navigation">
+            <li>
+              <a href="info.html">Студия</a>
+            </li>
+            <li>
+              <a href="clients.html">Клиенты</a>
+            </li>
+            <li>
+              <a href="catalog.html">Магазин</a>
+            </li>
+            <li>
+              <a href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+          <a href="basket.html" class="user-basket">Корзина</a>
+        </nav>
+      </header>
+      <section class="slider-wrraper">
+        <h1 class="visually-hidden main-title">Вэб-студия «Нёрдс»</h1>
+        <ul class="slider">
+          <li class="slider-item">
+            <p><strong>Долго, дорого, скрупулезно.</strong></p>
+            <p>Математически выверенный дизайн для вашего сайта или приложения
+            </p>
+            <a href="info.html" class="btn">Узнать больше</a>
           </li>
-          <li>
-            <a href="clients.html">Клиенты</a>
+          <li class="slider-item visually-hidden">
+            <p><strong>Любим математику как никто другой</strong></p>
+            <p>Никакого креатива, только математические формулы для расчета
+              идеальных пропорций</p>
+            <a href="info.html" class="btn">Узнать больше</a>
           </li>
-          <li>
-            <a href="catalog.html">Магазин</a>
-          </li>
-          <li>
-            <a href="contacts.html">Контакты</a>
+          <li class="slider-item visually-hidden">
+            <p><strong>Только ночь, только хардкор</strong></p>
+            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа
+              только начинается.</p>
+            <a href="info.html" class="btn">Узнать больше</a>
           </li>
         </ul>
-        <a href="basket.html" class="user-basket">Корзина</a>
-      </nav>
-    </header>
+        <div class="slider-controls">
+          <label for="slide1" class="visually-hidden">Первый слайд</label>
+          <input type="radio" name="control" id="slide1" checked>
+          <label for="slide2" class="visually-hidden">Второй слайд</label>
+          <input type="radio" name="control" id="slide2">
+          <label for="slide3" class="visually-hidden">Третий слайд</label>
+          <input type="radio" name="control" id="slide3">
+        </div>
+      </section>
+    </div>
     <main class="container">
-      <h1 class="visually-hidden main-title">Вэб-студия «Нёрдс»</h1>
-      <ul class="slider">
-        <li class="slider-item">
-          <p><strong>Долго, дорого, скрупулезно.</strong></p>
-          <p>Математически выверенный дизайн для вашего сайта или приложения
-          </p>
-          <a href="info.html" class="btn">Узнать больше</a>
-        </li>
-        <li class="slider-item">
-          <p><strong>Любим математику как никто другой</strong></p>
-          <p>Никакого креатива, только математические формулы для расчета
-            идеальных пропорций</p>
-          <a href="info.html" class="btn">Узнать больше</a>
-        </li>
-        <li class="slider-item">
-          <p><strong>Только ночь, только хардкор</strong></p>
-          <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа
-            только начинается.</p>
-          <a href="info.html" class="btn">Узнать больше</a>
-        </li>
-      </ul>
-      <div class="slider-controls">
-        <label for="slide1" class="visually-hidden">Первый слайд</label>
-        <input type="radio" name="control" id="slide1" checked>
-        <label for="slide2" class="visually-hidden">Второй слайд</label>
-        <input type="radio" name="control" id="slide2">
-        <label for="slide3" class="visually-hidden">Третий слайд</label>
-        <input type="radio" name="control" id="slide3">
-      </div>
       <section class="advantages">
         <h2 class="visually-hidden advantage-title">Наши предложения</h2>
-        <ul>
+        <ul class="advantages-items">
           <li class="advantage-item site-development">
             <img src="img/sait-pic.png" alt="Разработка сайтов" width="300"
             height="146">
             <h3 class="advantage-sait-title">Вэб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидите ваш сайт!</p>
-            <a href="order.html" class="btn site-development">Заказать</a>
+            <a href="order.html" class="btn">Заказать</a>
           </li>
           <li class="advantage-item app-development">
             <img src="img/app-pic.png" alt="Разработка приложений" width="300"
             height="146">
             <h3 class="advantage-app-title">Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a href="order.html" class="btn app-development">Заказать</a>
+            <a href="order.html" class="btn">Заказать</a>
           </li>
           <li class="advantage-item presentation-development">
             <img src="img/presentation-pic.png" alt="Разработка презентаций"
             width="300" height="146">
             <h3 class="advantage-presentation-title">Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a href="order.html" class="btn presentation-development">
+            <a href="order.html" class="btn">
               Заказать
             </a>
           </li>
@@ -157,13 +163,16 @@
         <h2 class="visually-hidden social-title">Мы в социальных сетях</h2>
         <ul>
           <li class="social-icon">
-            <a href="https://vk.com">VK</a>
+            <a href="https://vk.com"><span class="visually-hidden">В контакте
+            </span><img src="img/vk-icon.svg" alt=""></a>
           </li>
           <li class="social-icon">
-            <a href="https://www.facebook.com">Facebook</a>
+            <a href="https://www.facebook.com"><span class="visually-hidden">
+              Facebook</span><img src="img/fb-icon.svg" alt=""></a>
           </li>
           <li class="social-icon">
-            <a href="https://www.instagram.com">Instagram</a>
+            <a href="https://www.instagram.com"><span class="visually-hidden">
+              Instagram</span><img src="img/insta-icon.svg" alt=""></a>
           </li>
         </ul>
         <p><b>Давайте дружить, это выгодно!</b></p>
@@ -176,12 +185,13 @@
         <label for="name">Ваше имя:</label>
         <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
         <label for="email">Ваш e-mail:</label>
-        <input type="text" id="email" name="email" placeholder="Для отправки ответа">
-        <label for="message">Текст письма:</label>
-        <textarea id="message" name="message">В свободной форме</textarea>
+        <input type="email" id="email" name="email" placeholder="Для отправки ответа">
+        <p><label for="message">Текст письма:</label>
+        <textarea id="message" name="message">В свободной форме</textarea></p>
         <button class="btn" type="submit">Отправить</button>
       </form>
-      <button class="modal-close" type="button">Закрыть</button>
+      <button class="modal-close" type="button"><span class="visually-hidden">
+        Закрыть</span><img src="img/close-cross.svg" alt=""></button>
     </section>
   </body>
 </html>
