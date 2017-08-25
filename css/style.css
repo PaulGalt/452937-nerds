@@ -77,9 +77,24 @@ a {
   background-color: #eeeeee;
 }
 
+.centring-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .main-header {
   display: flex;
+  //justify-content: space-between;
   align-items: center;
+  padding-top: 49px;
+  border: 2px solid green;  /*temp*/
+}
+
+.main-header-logo {
+  margin-left: 20px;
+  margin-right: 200px;
+  border: 2px solid blue;  /*temp*/
 }
 
 .main-header-logo:hover,
@@ -93,22 +108,30 @@ a {
 
 .main-navigation {
   display: flex;
-  justify-content: flex-end;
-  align-items: baseline;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid red;  /*temp*/
 }
 
 .main-navigation ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .main-navigation a {
   display: block;
-  margin-right: 45px;
+  margin-right: 43px;
 
   font: inherit;
   line-height: 30px;
   font-weight: 500;
   color: #000000;
+  border: 2px solid yellow;  /*temp*/
+}
+
+.site-navigation {
+  display: flex;
 }
 
 .site-navigation-current a {
@@ -130,11 +153,10 @@ a {
   position: relative;
 
   display: block;
-  margin-left: 245px;
-}
-
-.site-navigation {
-  display: flex;
+  margin: 0;
+  margin-left: 105px;
+  padding-right: 20px;
+  border: 2px solid blue;  /*temp*/
 }
 
 .user-basket::before {
@@ -150,13 +172,7 @@ a {
   content: "";
 }
 
-.slider-wrraper {
-  background-color: #eeeeee;
-}
-
 .slider {
-  background-color: #eeeeee;
-
   list-style: none;
 }
 
@@ -273,7 +289,7 @@ a {
 
 .presentation-development .btn:active {
   color: rgba(255, 255, 255, 0.3);
-  
+
   background-color: #e5a722;
   box-shadow: inset 0 3px 0 0 #ce961f;
 }
@@ -351,7 +367,7 @@ a {
 .our-address strong,
 .filter legend,
 .sorting b,
-.hover-info a:first-of-type {
+.hover-info span {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
