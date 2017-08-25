@@ -60,18 +60,6 @@ a {
   border: none;
 }
 
-.btn:hover,
-.btn:focus {
-  background-color: #e74246;
-  outline: none;
-}
-
-.btn:not(.hover-info-btn):active {
-  color: rgba(255, 255, 255, 0.3);
-
-  background-color: #d7373b;
-}
-
 .visually-hidden {
   position: absolute;
 
@@ -135,9 +123,7 @@ a {
 }
 
 .main-navigation a:active {
-  color: #000000;
-
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .main-navigation .user-basket {
@@ -210,6 +196,19 @@ a {
   margin-top: 42px;
 }
 
+.slider-item .btn:hover,
+.slider-item .btn:focus {
+  background-color: #e74246;
+  outline: none;
+}
+
+.slider-item .btn:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #d7373b;
+  box-shadow: inset 0 3px 0 0 #c13135;
+}
+
 .advantages-items {
   display: flex;
   width: 1130px;
@@ -234,6 +233,19 @@ a {
   margin: 35px 0 80px;
 }
 
+.site-development .btn:hover,
+.site-development .btn:focus {
+  background-color: #e74246;
+  outline: none;
+}
+
+.site-development .btn:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #d7373b;
+  box-shadow: inset 0 3px 0 0 #c13135;
+}
+
 .app-development .btn {
   background-color: #00ca74;
 }
@@ -244,7 +256,10 @@ a {
 }
 
 .app-development .btn:active {
+  color: rgba(255, 255, 255, 0.3);
+
   background-color: #00aa62;
+  box-shadow: inset 0 3px 0 0 #009958;
 }
 
 .presentation-development .btn {
@@ -257,7 +272,10 @@ a {
 }
 
 .presentation-development .btn:active {
+  color: rgba(255, 255, 255, 0.3);
+  
   background-color: #e5a722;
+  box-shadow: inset 0 3px 0 0 #ce961f;
 }
 
 .about-us {
@@ -336,7 +354,7 @@ a {
 .hover-info a:first-of-type {
   font-size: 18px;
   line-height: 30px;
-  font-size: 22px;
+  font-weight: bold;
   color: #000000;
   text-transform: uppercase;
 }
@@ -381,6 +399,7 @@ a {
 
 .social-icon a:active {
   background-color: #d7373b;
+  box-shadow: inset 0 3px 0 0 #c13135;
 }
 
 .social-icon:active img {
@@ -698,6 +717,11 @@ a {
 
 .hover-info .btn:active {
   background-color: #d7373b;
+  box-shadow: inset 0 3px 0 0 #c13135;
+}
+
+.catalog-item:hover {
+  box-shadow: 0 6px 15px #cfcfcf;
 }
 
 .catalog-item:hover .hover-info {
@@ -744,7 +768,7 @@ a {
 
 .pagination-list a:active {
   color: rgba(0, 0, 0, 0.3);
-  
+
   background-color: #d5d5d5;
   box-shadow: inset 0 3px 0 0 #bfbfbf;
 }
