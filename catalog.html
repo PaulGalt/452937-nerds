@@ -18,19 +18,19 @@
         <nav class="main-navigation">
           <ul class="site-navigation">
             <li>
-              <a href="info.html">Студия</a>
+              <a href="#">Студия</a>
             </li>
             <li>
-              <a href="clients.html">Клиенты</a>
+              <a href="#">Клиенты</a>
             </li>
             <li class="site-navigation-current">
               <a>Магазин</a>
             </li>
             <li>
-              <a href="contacts.html">Контакты</a>
+              <a href="#">Контакты</a>
             </li>
           </ul>
-          <a href="basket.html" class="user-basket">Корзина</a>
+          <a href="#" class="user-basket">Корзина</a>
         </nav>
       </header>
       <h1 class="main-title">Магазин готовых шаблонов</h1>
@@ -136,7 +136,7 @@
               <img src="img/sedona-img.jpg" alt="Шаблон «Седона»" width="360" height="576">
               <div class="hover-info">
                 <a href="#"><span class="title-item">sedona</span></a>
-                <p>Информационный сайт<br> для туристов</p>
+                <p>Информационный сайт для туристов</p>
                 <a href="#" class="btn hover-info-btn">9 900РУБ.</a>
               </div>
             </li>
@@ -208,7 +208,7 @@
         <p>191186, Санкт-Петербург,<br>
         ул. Б. Конюшенная, д. 19/8</p>
         <p>тел. +7 (812) 275-75-75</p>
-        <a href="contact.html" class="btn">Напишите нам</a>
+        <a href="#" class="btn">Напишите нам</a>
       </div>
       <img src="img/map-marker.png" class="marker" alt="Маркер на карте"
       width="231" height="190">
@@ -238,12 +238,20 @@
   <section class="modal modal-contact-us">
     <h2 class="contact-title">Напишите нам</h2>
     <form action="https://echo.htmlacademy.ru" class="contact-form" method="post">
-      <label for="name">Ваше имя:</label>
-      <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
-      <label for="email">Ваш e-mail:</label>
-      <input type="text" id="email" name="email" placeholder="Для отправки ответа">
-      <label for="message">Текст письма:</label>
-      <textarea id="message" name="message">В свободной форме</textarea>
+      <div class="input-name">
+        <p><label for="name">Ваше имя:</label></p>
+        <p><input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
+        </p>
+      </div>
+      <div class="input-email">
+        <p><label for="email">Ваш e-mail:</label></p>
+        <p><input type="email" id="email" name="email" placeholder="Для отправки ответа">
+        </p>
+      </div>
+      <div class="input-message">
+        <p><label for="message">Текст письма:</label></p>
+        <p><textarea id="message" name="message" rows="6">В свободной форме</textarea></p>
+      </div>
       <button class="btn" type="submit">Отправить</button>
     </form>
     <button class="modal-close" type="button"><span class="visually-hidden">
