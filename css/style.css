@@ -978,9 +978,11 @@ a {
   list-style: none;
 }
 
+/*
 .sorting-items img {
   opacity: 0.2;
 }
+*/
 
 .sorting-items li{
   font-size: 14px;
@@ -996,6 +998,7 @@ a {
 }
 
 .sorting-down {
+	display: block;
   margin-left: 48px;
 	width: 11px;
 	height: 10px;
@@ -1005,6 +1008,7 @@ a {
 }
 
 .sorting-up {
+	display: block;
   margin-left: 18px;
 	width: 11px;
 	height: 10px;
@@ -1013,14 +1017,15 @@ a {
 	opacity: 0.2;
 }
 
-.sorting-items li.sorting-item-active,
+.sorting-items .sorting-item-active,
+.sorting-items li:active,
 .sorting-items a:active {
   opacity: 1;
   color: #000000;
 }
 
 .sorting-items li:hover,
-.sorting-items li:focus {
+.sorting-items li:focus{
   opacity: 0.6;
 }
 
