@@ -30,7 +30,9 @@
               <a href="#">Контакты</a>
             </li>
           </ul>
-          <a href="#" class="user-basket">Корзина</a>
+          <div class="user-basket-wrapper">
+          	<a href="#" class="user-basket">Корзина</a>
+					</div>
         </nav>
       </header>
       <h1 class="main-title">Магазин готовых шаблонов</h1>
@@ -45,13 +47,13 @@
           <fieldset class="price-block">
             <legend>Стоимость:</legend>
             <div class="price-area">
-              <img src="img/filter-button.svg" class="min-price-button" alt="">
-              <img src="img/filter-button.svg" class="max-price-button" alt="">
+							<div class="min-price-button"></div>
+							<div class="max-price-button"></div>
             </div>
             <label for="min-price">от</label>
-            <input type="number" id="min-price" name="min-price" value="0">
+            <input type="text" id="min-price" name="min-price" value="0">
             <label for="min-price">до</label>
-            <input type="number" id="max-price" name="max-price" value="15000">
+            <input type="text" id="max-price" name="max-price" value="15 000">
           </fieldset>
           <fieldset>
             <legend>Сетка:</legend>
@@ -202,30 +204,32 @@
   </main>
   <footer class="main-footer">
     <section class="address">
-      <h2 class="visually-hidden address-title">Как нас найти</h2>
-      <div class="our-address">
-        <p><strong>NЁRDS DESIGN STUDIO</strong></p>
-        <p>191186, Санкт-Петербург,<br>
-        ул. Б. Конюшенная, д. 19/8</p>
-        <p>тел. +7 (812) 275-75-75</p>
-        <a href="#" class="btn">Напишите нам</a>
-      </div>
-    </section>
+       	<div class="address-wrapping centring-wrapper">
+        	<h2 class="visually-hidden address-title">Как нас найти</h2>
+        	<div class="our-address">
+          	<p><strong>NЁRDS DESIGN STUDIO</strong></p>
+          	<p>191186, Санкт-Петербург,
+          	ул. Б. Конюшенная, д. 19/8</p>
+          	<p>тел. +7 (812) 275-75-75</p>
+          	<a href="#" class="btn">Напишите нам</a>
+        	</div>
+				</div>
+      </section>
     <section class="social centring-wrapper">
       <h2 class="visually-hidden social-title">Мы в социальных сетях</h2>
       <ul>
-        <li class="social-icon">
-          <a href="https://vk.com"><span class="visually-hidden">В контакте</span>
-          <img src="img/vk-icon.svg" alt=""></a>
-        </li>
-        <li class="social-icon">
-          <a href="https://www.facebook.com"><span class="visually-hidden">
-            Facebook</span><img src="img/fb-icon.svg" alt=""></a>
-        </li>
-        <li class="social-icon">
-          <a href="https://www.instagram.com"><span class="visually-hidden">
-            Instagram</span><img src="img/insta-icon.svg" alt=""></a>
-        </li>
+        <li class="social-icon vk-button">
+            <a href="https://vk.com"><span class="visually-hidden">В контакте
+            </span></a>
+          </li>
+          <li class="social-icon fb-button">
+            <a href="https://www.facebook.com"><span class="visually-hidden">
+              Facebook</span></a>
+          </li>
+          <li class="social-icon insta-button">
+            <a href="https://www.instagram.com"><span class="visually-hidden">
+              Instagram</span></a>
+          </li>
       </ul>
       <div class="social-offer">
         <p><b>Давайте дружить, это выгодно!</b></p>
@@ -253,7 +257,7 @@
       <button class="btn" type="submit">Отправить</button>
     </form>
     <button class="modal-close" type="button"><span class="visually-hidden">
-      Закрыть</span><img src="img/close-cross.svg" alt=""></button>
+			Закрыть</span></button>
   </section>
 </body>
 </html>
