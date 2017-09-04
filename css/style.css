@@ -1086,7 +1086,7 @@ a {
 
 .filter input[type="radio"] ~ label::before {
   position: absolute;
-  top: -5px;
+  top: -2px;
   left: -35px;
   z-index: 1;
 
