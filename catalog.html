@@ -194,14 +194,16 @@
 	</main>
 	<footer class="main-footer">
 		<section class="address">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d992.3928210098592!2d30.320608508720113!3d59.93894187875631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0JEuINCa0L7QvdGO0YjQtdC90L3QsNGPIDE5Lzg!5e0!3m2!1sen!2suk!4v1504626558058" width="100%" height="416" style="border:0" allowfullscreen></iframe>
 			<div class="address-wrapping centring-wrapper">
 				<h2 class="visually-hidden address-title">Как нас найти</h2>
 				<div class="our-address">
 					<p><strong>NЁRDS DESIGN STUDIO</strong></p>
 					<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 					<p>тел. +7 (812) 275-75-75</p>
-					<a href="#" class="btn">Напишите нам</a>
+					<a href="#" class="btn modal-open-btn">Напишите нам</a>
 				</div>
+				<div class="marker"></div>
 			</div>
 		</section>
 		<section class="social centring-wrapper">
@@ -219,6 +221,7 @@
 					<a href="https://www.instagram.com"><span class="visually-hidden">
               Instagram</span></a>
 				</li>
+				
 			</ul>
 			<div class="social-offer">
 				<p><b>Давайте дружить, это выгодно!</b></p>
@@ -228,7 +231,7 @@
 	</footer>
 	<section class="modal modal-contact-us">
 		<h2 class="contact-title">Напишите нам</h2>
-		<form action="https://echo.htmlacademy.ru" class="contact-form" method="post">
+			<form action="https://echo.htmlacademy.ru" class="contact-form" method="post">
 			<div class="input-name">
 				<p><label for="name">Ваше имя:</label></p>
 				<p><input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
@@ -241,7 +244,7 @@
 			</div>
 			<div class="input-message">
 				<p><label for="message">Текст письма:</label></p>
-				<p><textarea id="message" name="message" rows="6">В свободной форме</textarea></p>
+				<p><textarea id="message" name="message" rows="6" placeholder="В свободной форме"></textarea></p>
 			</div>
 			<button class="btn" type="submit">Отправить</button>
 		</form>
