@@ -12,7 +12,7 @@ var storageMessage = localStorage.getItem("userMessage");
 openModal.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	showModal.classList.add("modal-open");
-	
+
 	if (storageName || storageEmail) {
 		userName.value = storageName;
 		userEmail.value = storageEmail;
@@ -61,6 +61,7 @@ contactForm.addEventListener("submit", function (evt) {
 window.addEventListener("keydown", function (evt) {
 	if (evt.keyCode === 27) {
 		if (showModal.classList.contains("modal-open")) {
+			evt.preventDefault();
 			showModal.classList.remove("modal-open");
 			showModal.classList.remove("modal-error");
 			userName.classList.remove("modal-invalid");
