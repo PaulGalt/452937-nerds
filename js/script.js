@@ -5,9 +5,17 @@ var userName = showModal.querySelector("[name=name]");
 var userEmail = showModal.querySelector("[name=email]");
 var contactForm = showModal.querySelector("form");
 var userMessage = showModal.querySelector("[name=message]");
-var storageName = localStorage.getItem("userName");
-var storageEmail = localStorage.getItem("userEmail");
-var storageMessage = localStorage.getItem("userMessage");
+var storageName;
+var storageEmail;
+var storageMessage;
+
+try {
+  storageName = localStorage.getItem("userName");
+  storageEmail = localStorage.getItem("userEmail");
+  storageMessage = localStorage.getItem("userMessage");
+} catch (e) {
+  console.log(e.message, e.name);
+}
 
 openModal.addEventListener("click", function (evt) {
 	evt.preventDefault();

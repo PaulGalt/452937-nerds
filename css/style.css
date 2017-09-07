@@ -40,11 +40,6 @@ a {
 	text-transform: uppercase;
 }
 
-img {
-	width: 100%;
-	height: auto;
-}
-
 .btn {
 	display: block;
 	width: 400px;
@@ -593,6 +588,8 @@ img {
 .address {
 	position: relative;
 	margin-top: 80px;
+	padding: 0;
+	max-height: 416px;
 	background-color: #eeeeee;
 	border-top: 1px solid transparent;
 }
@@ -601,7 +598,6 @@ img {
 	position: relative;
 	top: -500px;
 	width: 1440px;
-	max-height: 416px;
 	margin-top: 80px;
 }
 
@@ -693,7 +689,7 @@ img {
 	-webkit-box-align: start;
 	-ms-flex-align: start;
 	align-items: flex-start;
-	margin-top: -20px;
+	margin-top: -14px;
 }
 
 .social ul {
