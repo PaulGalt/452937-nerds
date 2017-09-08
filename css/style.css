@@ -808,6 +808,11 @@ a {
 	z-index: 20;
 }
 
+.no-js .modal-contact-us {
+	display: block;
+	position: relative;
+}
+
 .modal-open {
 	display: block;
 	-webkit-animation-name: lift;
@@ -957,7 +962,7 @@ a {
 	margin: 0;
 	padding: 0;
 	margin-top: 13px;
-	padding: 16px;
+	padding-left: 16px;
 	font: inherit;
 	line-height: 18px;
 	border-radius: 2px;
@@ -984,14 +989,14 @@ a {
 .modal input:hover,
 .modal textarea:hover {
 	color: #a1a1a1;
-	border-color: #b4b9bb;
+	border: 2px solid #b4b9bb;
 	opacity: 1;
 }
 
 .modal input:focus,
 .modal textarea:focus {
 	color: #000000;
-	border-color: #000000;
+	border: 2px solid #000000;
 	outline: none;
 }
 
@@ -1010,10 +1015,10 @@ a {
 	color: #000000;
 }
 
-.modal input:not(:focus):invalid,
-.modal textarea:invalid {
+.modal input:not(:focus):not(:placeholder-shown):invalid,
+.modal textarea:not(:focus):not(:placeholder-shown):invalid {
 	color: #e74246;
-	border-color: #e74246;
+	border: 2px solid #e74246;
 }
 
 .modal-invalid {

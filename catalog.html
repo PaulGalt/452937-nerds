@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body class="no-js">
 	<div class="top-wrapper">
 		<div class="centring-wrapper">
 			<header class="main-header">
@@ -235,17 +235,17 @@
 		<form action="https://echo.htmlacademy.ru" class="contact-form" method="post">
 			<div class="input-name">
 				<p><label for="name">Ваше имя:</label></p>
-				<p><input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста">
+				<p><input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" required>
 				</p>
 			</div>
 			<div class="input-email">
 				<p><label for="email">Ваш e-mail:</label></p>
-				<p><input type="email" id="email" name="email" placeholder="Для отправки ответа">
+				<p><input type="email" id="email" name="email" placeholder="Для отправки ответа" required>
 				</p>
 			</div>
 			<div class="input-message">
 				<p><label for="message">Текст письма:</label></p>
-				<p><textarea id="message" name="message" rows="6" placeholder="В свободной форме"></textarea></p>
+				<p><textarea id="message" name="message" rows="6" placeholder="В свободной форме" required></textarea></p>
 			</div>
 			<button class="btn" type="submit">Отправить</button>
 		</form>

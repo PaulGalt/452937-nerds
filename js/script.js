@@ -1,3 +1,4 @@
+var body = document.body;
 var openModal = document.querySelector(".modal-open-btn");
 var showModal = document.querySelector(".modal-contact-us");
 var closeModal = showModal.querySelector(".modal-close");
@@ -8,6 +9,13 @@ var userMessage = showModal.querySelector("[name=message]");
 var storageName;
 var storageEmail;
 var storageMessage;
+
+if(body.classList.contains("no-js")) {
+  body.classList.remove("no-js");
+	userName.removeAttribute("required");
+	userEmail.removeAttribute("required");
+	userMessage.removeAttribute("required");
+}
 
 try {
   storageName = localStorage.getItem("userName");
