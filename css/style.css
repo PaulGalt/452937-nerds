@@ -1,5 +1,5 @@
 body {
-	min-width: 1440px;
+	min-width: 1200px;
 	margin: 0 auto;
 	font-size: 16px;
 	line-height: 24px;
@@ -603,7 +603,7 @@ a {
 .address-wrapping {
 	position: relative;
 	top: -500px;
-	width: 1440px;
+	min-width: 1200px;
 	margin-top: 80px;
 }
 
