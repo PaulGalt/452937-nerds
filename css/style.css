@@ -616,7 +616,7 @@ a {
 .our-address {
 	position: absolute;
 	top: 50px;
-	left: 140px;
+	left: 20px;
 	width: 319px;
 	height: 307px;
 	padding: 0 50px;
@@ -678,8 +678,8 @@ a {
 
 .marker {
 	position: absolute;
-	top: 50px;
-	left: 900px;
+	top: 48px;
+	left: 779px;
 	width: 231px;
 	height: 190px;
 	background-image: url("../img/map-marker.png");
